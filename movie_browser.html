@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Style -->
+    <link href="bootstrap/css/style.css" rel="stylesheet" >
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header text-center">
+        <h1>Movie Browser</h1>
+      </div>
+      <div class="row">
+        <div class="12">
+          <div class="checkbox text-center">
+            <h3>Search by ...</h3>
+            <label class="checkbox-inline"><input type="checkbox" id="actor-checkbox" value="">
+              Actor</label>
+            <label class="checkbox-inline"><input type="checkbox" id="director-checkbox" value="">     Director</label>
+            <label class="checkbox-inline"><input type="checkbox" id="producer-checkbox" value="">Producer</label>
+            <label class="checkbox-inline"><input type="checkbox" id="genre-checkbox" value="">Genre</label>
+            <label class="checkbox-inline"><input type="checkbox" id="movie-title-checkbox" value="">Movie Title</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <form>
+          <div class="form-group text-center">
+            <input type="text" class="form-control" id="search" placeholder="Jim Carrey"><br>
+            <button type="button" class="btn btn-primary btn-md" href="#">Search</button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <h4 class="text-center">Or browse your chosen category by letter</h4>
+        <div class="text-center">
+          <a href="#">A</a><a href="#">B</a><a href="#">C</a><a href="#">D</a>
+          <a href="#">E</a><a href="#">F</a><a href="#">G</a><a href="#">H</a>
+          <a href="#">I</a><a href="#">J</a><a href="#">K</a><a href="#">L</a>
+          <a href="#">M</a><a href="#">N</a><a href="#">O</a><a href="#">P</a>
+          <a href="#">Q</a><a href="#">R</a><a href="#">S</a><a href="#">T</a>
+          <a href="#">U</a><a href="#">V</a><a href="#">W</a><a href="#">X</a>
+          <a href="#">Y</a><a href="#">Z</a>
+        </div>
+      </div>
+      <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Rating</th>
+                <th>Movie Title</th>
+                <th>Genre(s)</th>
+                <th>Summary</th>
+                <th>Actor(s)</th>
+                <th>Director(s)</th>
+                <th>Producer(s)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>3.1 / 5</td>
+                <td>Dumb and Dumber To</td>
+                <td>Comedy</td>
+                <td>Twenty years since their first adventure, Lloyd and Harry
+                    go on a road trip to find Harry's newly discovered daughter,
+                    who was given up for adoption.</td>
+                <td>Jim Carrey,
+                    Jeff Daniels,
+                    Robb Riggle</td>
+                <td>Bobby Farrelly,
+                    Peter Farrelly</td>
+              </tr>
+              <tr>
+                <td>2.5 / 5</td>
+                <td>Eternal Sunshine of the Spotless Mind</td>
+                <td>Drama, Romance, Sci-Fi</td>
+                <td>A man, Joel Barish, heartbroken that his girlfriend Clementine underwent
+                    a procedure to erase him from her memory, decides to do the same.
+                    However, as he watches his memories of her fade away, he realizes
+                    that he still loves her and may be to late to correct his mistake.</td>
+                <td>Jim Carrey,
+                    Kate Winslet,
+                    Gerry Robert Byrne,
+                    Elijah Wood</td>
+                <td>Peter Weir</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <div class="row">
+        <h4 class="text-center">Have a different opinion? Enter the title and your rating!</h4>
+        <form>
+          <div class="form-group text-center">
+            <label>Title:<input type="text" name="" id="opinion-title" placeholder="Dumb and Dumber To"></label>
+            <label>Rating:<input type="text" name="" id="opinion-rating" placeholder="1.0"></label><br>
+            <button type="button" class="btn btn-primary btn-md" href="#">Submit Rating</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
